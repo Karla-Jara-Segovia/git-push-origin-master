@@ -1,4 +1,11 @@
-<form action="/answer">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
-</form>
+<h1>Question#ask<h1>
+
+<!-- Question -->
+<p><%= params[:question] %></p>
+<!-- Answer -->
+<p><%= @answer[:question] %></p>
+
+
+<%= link_to "Ask a new question", ask_path %>
+
+
